@@ -117,7 +117,7 @@ module.exports = {
           short: 'jest',
         },
         {
-          name: 'Karma and Mocha',
+          name: 'Karma and Jasmine',
           value: 'karma',
           short: 'karma',
         },
