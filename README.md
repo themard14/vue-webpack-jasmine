@@ -2,7 +2,9 @@
 
 > A full-featured Webpack setup with hot-reload, lint-on-save, unit testing & css extraction.
 
-> This template is Vue 2.0 compatible. For Vue 1.x use this command: `vue init webpack#1.0 my-project`
+> This has been adapted to support Jasmine unit testing and Sonar support
+
+> This template is Vue 2.0 compatible.
 
 ## Documentation
 
@@ -47,7 +49,7 @@ The development server will run on port 8080 by default. If that port is already
   - Static assets compiled with version hashes for efficient long-term caching, and an auto-generated production `index.html` with proper URLs to these generated assets.
   - Use `npm run build --report`to build with bundle size analytics.
 
-- `npm run unit`: Unit tests run in [JSDOM](https://github.com/tmpvar/jsdom) with [Jest](https://facebook.github.io/jest/), or in PhantomJS with Karma + Mocha + karma-webpack.
+- `npm run unit`: Unit tests run in [JSDOM](https://github.com/tmpvar/jsdom) with [Jest](https://facebook.github.io/jest/), or in PhantomJS with Karma + Jasmine + karma-jasmine.
   - Supports ES2015+ in test files.
   - Easy mocking.
 
