@@ -4,20 +4,20 @@
     {{#router}}
     <router-view/>
     {{else}}
-    <HelloWorld/>
+    <Component1/>
     {{/router}}
   </div>
 </template>
 
 <script>
 {{#unless router}}
-import HelloWorld from './components/HelloWorld'
+import Component1 from './components/Component1'
 
 {{/unless}}
 export default {
   name: 'App'{{#router}}{{else}},
   components: {
-    HelloWorld
+    Component1
   }{{/router}}
 }
 </script>

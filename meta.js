@@ -133,6 +133,11 @@ module.exports = {
       type: 'confirm',
       message: 'Setup e2e tests with Nightwatch?',
     },
+    sonar: {
+      when: 'isNotTest',
+      type: 'confirm',
+      message: 'Add sonar?',
+    },
     autoInstall: {
       when: 'isNotTest',
       type: 'list',
@@ -170,6 +175,7 @@ module.exports = {
     'test/unit/setup.js': "unit && runner === 'jest'",
     'test/e2e/**/*': 'e2e',
     'src/router/**/*': 'router',
+    'sonar-project.properties': 'sonar'
   },
   complete: function(data, { chalk }) {
     const green = chalk.green
