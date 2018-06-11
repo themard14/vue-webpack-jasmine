@@ -7,6 +7,7 @@ module.exports = {
   },
   env: {
     browser: true,
+    jquery: true
   },
   {{#if_eq lintConfig "standard"}}
   extends: [
